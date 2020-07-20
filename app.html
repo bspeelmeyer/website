@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+    <title>Speelmijer Solutions </title>
+
+   
+
+  </head>
+  <header>
+    <div class="container-fluid bg-dark ">
+        <img src=logo.png class="mx-auto d-block">
+    </div>
+  </header>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="app.html">My App</a>
+        </li>
+      </ul>
+    </nav>
+     
+    <div class="container p-3 my-3 border">
+        <p>This progam is designed to show how you can win more than loosing but still loose all your money. 
+          The program is based on rule let and playing thirds. For example if the middle third wins you would then 
+          bet on the other two thirds.</p><br>
+        <p>To play, enter the amount you wish to start with in the bank box and then enter the amount you wish to bet
+            in the bet box. Keep in mind that every bat will be double, because you are batting on two thirds per game</p><br>
+        <p>Have fun and enjoy loosing.</p>
+        <div class="container p-3 my-3 border"> 
+            <form class="form-inline">
+                <label class="mr-sm-2" for="bank">Bank: </label>
+                <input class="mr-sm-2" type="number" id="bank" name="bank">
+                <label class="mr-sm-2" for="bet">Bat: </label>
+                <input class="mr-sm-2" type="number" id="bet" name="bet">
+            </form>
+         </div>
+         <div class="container p-3 my-3 border">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Games played</th>
+                <th scope="col">Games won</th>
+                <th scope="col">Games lost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="gamesPlayed">0</td>
+                <td id="gamesWon">0</td>
+                <td id="gamesLost">0</td>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+         <div class="container p-3 my-3 border">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Bat 1 - 12</th>
+                <th scope="col">Bat 13 - 24</th>
+                <th scope="col">Bat 25 - 36</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="thirdOne">0</td>
+                <td id="thirdTwo">0</td>
+                <td id="thirdThree">0</td>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+         <div class="container p-3 my-3 border overflow-auto">
+            <h3>Winning numbers</h3>
+            <p id="winningNumbers"></p>
+         </div>
+         <div class="container p-3 my-3 border">
+            <button onclick="reset1()">Reset</button>
+            <button onclick="play()">Play</button>
+         </div>
+    </div>
+        <!-- script-->
+    <script type="text/javascript" src="betScript.js"></script>
+  </body>
+  <footer>
+    <div class="container-fluid bg-dark text-white">
+      <p>2020 &copy Speelmijer Solutions</p>
+    </div>
+    
+  </footer>
+
+</html>
