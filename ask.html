@@ -31,9 +31,22 @@
       </ul>
     </nav>
     <div class="container-sm my-3">
-        <img src=construct.jpg class="mx-auto d-block rounded-circle">  
+        <div class="container p-3 my-3 border"> 
+            <form class="form-inline">
+                <label class="mr-sm-2" for="userQuestion">Enter your question: </label>
+                <input class="mr-sm-2"  id="userQuestion" name="userQuestion">
+            </form>
+         </div>
     </div>
-      
+    <div class="container p-3 my-3 border overflow-auto">
+        <h3>The computers answer:</h3>
+        <h1 class="text-center" id="computerAnswer"></h1>
+     </div>
+    <div class="container p-3 my-3 border">
+        <button onclick="clearForm()">Reset</button>
+    <button onclick="askQuestion()">Submit question</button>
+     </div>
+     <script type="text/javascript" src="ask.js"></script>
   </body>
   <footer>
     <div class="container-fluid bg-dark text-white">
